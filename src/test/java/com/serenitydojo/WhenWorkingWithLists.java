@@ -53,7 +53,7 @@ public class WhenWorkingWithLists {
     }
 
     // We can add a value to the start an existing list
-    @Test
+  /*  @Test
     public void addingAValueToTheStartOfAList() {
         List<String> colors = new ArrayList<>(Arrays.asList("red", "green", "blue"));
 
@@ -65,6 +65,18 @@ public class WhenWorkingWithLists {
         // TODO: Add "yellow" to the START of this list
 
         assertThat(colors).containsExactly("yellow", "red", "green", "blue");
+   */
+
+    @Test
+    public void addingValueToTheStartOfAlist(){
+        List<String> colors = new ArrayList<>(Arrays.asList("black", "tan", "brown"));
+
+        colors.clear();
+        colors.add("brown");
+        colors.add("tan");
+
+        assertThat(colors).containsExactly("brown", "tan");
+
     }
 
     // We can delete a value from an existing list

@@ -29,6 +29,8 @@ public class WhenWorkingWithSets {
         assertThat(colors).containsExactlyInAnyOrder("red", "green", "blue");
     }
 
+
+
     // We can create a set containing a specified list of values")
     @Test
     public void creatingASetOfValues() {
