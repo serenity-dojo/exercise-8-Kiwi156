@@ -80,7 +80,7 @@ public class WhenWorkingWithLists {
     }
 
     // We can delete a value from an existing list
-    @Test
+  /*  @Test
     public void deletingAValueInAList() {
         List<String> colors = new ArrayList<>(Arrays.asList("red", "green", "blue"));
 
@@ -88,7 +88,17 @@ public class WhenWorkingWithLists {
         // TODO: Remote "green" from the list
 
         assertThat(colors).containsExactly( "red", "blue");
+   */
+
+    @Test
+    public void removingAValueInAList(){
+        List<String> kitchenItems = new ArrayList<>(Arrays.asList("knife", "pan", "teaTowel"));
+
+        kitchenItems.remove("pan");
+
+        assertThat(kitchenItems).containsExactly("knife", "teaTowel");
     }
+
 
     // We can find the number of elements in a list
     @Test
